@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{338B8208-5988-3A6E-8B96-7E57E56BBCBF}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>\opencv\build;C:\opencv\build\include;C:\opencv\build\include\opencv;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\3rdparty\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>\opencv\build;C:\opencv\build\include;C:\opencv\build\include\opencv;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\3rdparty\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>\opencv\build;C:\opencv\build\include;C:\opencv\build\include\opencv;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\3rdparty\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>\opencv\build;C:\opencv\build\include;C:\opencv\build\include\opencv;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\3rdparty\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Rahul/Desktop/ArUCO/aruco-2.0.10/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Rahul/Desktop/ArUCO/aruco-2.0.10 -BC:/Users/Rahul/Desktop/ArUCO/build --check-stamp-file C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Rahul/Desktop/ArUCO/aruco-2.0.10/CMakeLists.txt;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\CMakeLists.txt;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeCCompiler.cmake;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\opencv\build\OpenCVConfig-version.cmake;C:\opencv\build\OpenCVConfig.cmake;C:\opencv\build\x64\vc12\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-release.cmake;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\cmake_uninstall.cmake.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\config.cmake.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\aruco.pc.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\aruco-uninstalled.pc.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Rahul/Desktop/ArUCO/aruco-2.0.10/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Rahul/Desktop/ArUCO/aruco-2.0.10 -BC:/Users/Rahul/Desktop/ArUCO/build --check-stamp-file C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Rahul/Desktop/ArUCO/aruco-2.0.10/CMakeLists.txt;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\CMakeLists.txt;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeCCompiler.cmake;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\opencv\build\OpenCVConfig-version.cmake;C:\opencv\build\OpenCVConfig.cmake;C:\opencv\build\x64\vc12\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-release.cmake;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\cmake_uninstall.cmake.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\config.cmake.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\aruco.pc.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\aruco-uninstalled.pc.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Rahul/Desktop/ArUCO/aruco-2.0.10/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Rahul/Desktop/ArUCO/aruco-2.0.10 -BC:/Users/Rahul/Desktop/ArUCO/build --check-stamp-file C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Rahul/Desktop/ArUCO/aruco-2.0.10/CMakeLists.txt;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\CMakeLists.txt;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeCCompiler.cmake;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\opencv\build\OpenCVConfig-version.cmake;C:\opencv\build\OpenCVConfig.cmake;C:\opencv\build\x64\vc12\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-release.cmake;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\cmake_uninstall.cmake.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\config.cmake.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\aruco.pc.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\aruco-uninstalled.pc.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Rahul/Desktop/ArUCO/aruco-2.0.10/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Rahul/Desktop/ArUCO/aruco-2.0.10 -BC:/Users/Rahul/Desktop/ArUCO/build --check-stamp-file C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Rahul/Desktop/ArUCO/aruco-2.0.10/CMakeLists.txt;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\CMakeLists.txt;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeCCompiler.cmake;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\3.4.0-rc1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\opencv\build\OpenCVConfig-version.cmake;C:\opencv\build\OpenCVConfig.cmake;C:\opencv\build\x64\vc12\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-release.cmake;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\cmake_uninstall.cmake.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\config.cmake.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\aruco.pc.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\aruco-uninstalled.pc.in;C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/ZERO_CHECK.vcxproj">
+      <Project>EB70F702-073D-3F0C-9172-4D17CBC161C7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/src/aruco.vcxproj">
+      <Project>A961F287-D2EE-394D-A5A2-4008DA4483E2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/utils_calibration/aruco_calibration.vcxproj">
+      <Project>8F99FF7B-345C-35BE-A1DE-DB96D8B217AF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/utils_calibration/aruco_calibration_fromimages.vcxproj">
+      <Project>1B2DBA5A-8669-394B-A90E-22EAB3324062</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/utils_markermap/aruco_create_markermap.vcxproj">
+      <Project>C87356F4-B701-3B51-833A-006F16E48897</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/utils_markermap/aruco_markermap_pix2meters.vcxproj">
+      <Project>BB4BEAD3-269E-3269-A36F-C2E224E60BCD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/utils/aruco_print_dictionary.vcxproj">
+      <Project>F41BC458-B7CD-3837-B868-8B2F78492659</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/utils/aruco_print_marker.vcxproj">
+      <Project>A3823F91-1698-3A06-86ED-8A9221C41E41</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/utils/aruco_simple.vcxproj">
+      <Project>5FB1C249-BBE9-3708-9C45-0C6506356B0D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/utils_markermap/aruco_simple_markermap.vcxproj">
+      <Project>923D2792-BF6B-3549-B8E5-443AFC2F306D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/utils/aruco_test.vcxproj">
+      <Project>59F19CC4-9307-371C-9A9B-D76812A965EC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/utils_markermap/aruco_test_markermap.vcxproj">
+      <Project>54CA68C1-FA77-3DB9-BF10-0C5B6375A8DD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Rahul/Desktop/ArUCO/build/utils/aruco_tracker.vcxproj">
+      <Project>CD1C2712-4F2E-3A99-A96B-67413F32062C</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

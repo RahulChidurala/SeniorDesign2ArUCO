@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Rahul\Desktop\ArUCO\aruco-2.0.10\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\e0be290bf18f4844eeeb4410f50573d7\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Rahul\Desktop\ArUCO\build\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FDC356B9-40BE-39AB-85C5-BE09444BD31A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
