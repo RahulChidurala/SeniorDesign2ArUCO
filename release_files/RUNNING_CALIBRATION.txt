@@ -1,0 +1,3 @@
+aruco_calibration_fromimages.exe
+out_camera_calibration.yml -size 0.00952 -m Configuration.yml Image1.jpg Image2.
+jpg Image3.jpg Image4.jpg Image5.jpg Image6.jpg Image7.jpg Image8.jpg
