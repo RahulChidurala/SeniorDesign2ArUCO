@@ -1,6 +1,7 @@
 #include <cv.h>
 #include "opencv2/opencv.hpp"
 #include "aruco.h"
+
 using namespace cv;
 using namespace aruco;
 using namespace std;
@@ -24,6 +25,37 @@ static int getDirectionFromTvec(Mat Tvec){
 
 	//default return num for Stop
 	return 0;
+}
+
+static String getJSON(vector<Marker> markers){
+	int length = markers.size();
+
+	//make sure the there is a detected marker
+	if (length == 0){
+		return "";
+	}
+
+	String jsonString = "{ \"Markers\": [";
+
+
+
+	for (int i = 0; i < length; i++){
+		jsonString = jsonString + "{ \"ID\": " + to_string(markers[i].id) + ", "
+			+ "\"T\": { " + "\"x\": " + to_string(markers[i].Tvec.ptr< float >(0)[0]) + ", "
+			+ "\"y\": " + to_string(markers[i].Tvec.ptr< float >(0)[1]) + ", "
+			+ "\"z\": " + to_string(markers[i].Tvec.ptr< float >(0)[2]) + "}, "
+			+ "\"R\": { " + "\"x\": " + to_string(markers[i].Rvec.ptr< float >(0)[0]) + ", "
+			+ "\"y\": " + to_string(markers[i].Rvec.ptr< float >(0)[1]) + ", "
+			+ "\"z\": " + to_string(markers[i].Rvec.ptr< float >(0)[2]) + "}}";
+		
+		if (i != length - 1){
+			jsonString = jsonString + ",";
+		}
+	}
+
+	jsonString = jsonString + "] }";
+
+	return jsonString;
 }
 
 int main(int, char**)
@@ -130,13 +162,16 @@ int main(int, char**)
 				}
 			}
 			
-			//do it for multiples
+			//do it for multiple images
 			imageNumber = getDirectionFromTvec(Markers[i].Tvec);
-
+			
+			/*
 			cout << "ID " << Markers[i].id << endl;
 			cout << "T " << Markers[i].Tvec.ptr< float >(0)[0] << " " << Markers[i].Tvec.ptr< float >(0)[1] << " " << Markers[i].Tvec.ptr< float >(0)[2] << endl;
 			cout << "R " << Markers[i].Rvec.ptr< float >(0)[0] << " " << Markers[i].Rvec.ptr< float >(0)[1] << " " << Markers[i].Rvec.ptr< float >(0)[2] << endl;
-			cout << endl;
+			cout << endl;*/
+
+			cout << getJSON(Markers) << endl;
 			Markers[i].draw(frame, Scalar(0, 0, 255), 2);
 			CvDrawingUtils::draw3dAxis(frame, Markers[i], CamParam);
 			//CvDrawingUtils::draw3dCube(frame, Markers[i], CamParam, false);
